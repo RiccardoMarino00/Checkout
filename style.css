@@ -516,7 +516,7 @@ input[type="radio"]:checked + .lbl-radio:before  {
     border: 1px solid #ccc;
     border-radius: 15px;
     padding: 1rem;
-    margin-top: 10rem;
+    margin-top: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -542,10 +542,30 @@ summary {
     font-style: italic;
 }
 
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+
 .summary-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+input:hover, select:hover, textarea:hover {
+    border: 1px solid #cea5ce;
+    caret-color: black;
+    cursor: pointer;
+}
+
+select:active {
+    background-color: #ffffff00;
+}
+
+select, input[type="radio"] {
+    appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
