@@ -523,6 +523,8 @@ input[type="radio"]:checked + .lbl-radio:before  {
     background-color: #fff; 
 }
 
+
+
 summary {
     display: none;
 }
@@ -642,6 +644,7 @@ select, input[type="radio"] {
 
     .col-25 {
         width: 100%;
+        height: auto;
         padding: 0 1rem 1rem 1rem;
     }
 
